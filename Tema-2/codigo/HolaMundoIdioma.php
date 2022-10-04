@@ -7,15 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    
-<?php
-    $es="Hola Mundo";
-    $en="Hello world";
-
-    $idioma=$_GET['pais'];
-    //var_dump($idioma);
-    echo $$idioma;
-?>
-    
+    <?php
+        $es="Hola Mundo";
+        $en="Hello World";
+        $fr="Salut monde";
+        $it="Ciao mondo";    
+        $dt="Hallo Welt";
+        $idioma= $_GET["pais"];
+        echo $$idioma;
+    ?>
 </body>
 </html>
