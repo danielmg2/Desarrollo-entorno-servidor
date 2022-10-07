@@ -28,9 +28,19 @@
         echo "</p>";
 
         echo "<p>";
-        echo "4º Muestra la fecha y hora actual formateada en 2022-09-4 19:17:18";
+        echo "4º Muestra la fecha y hora actual formateada en 2022-09-4 19:17:18:";
+        echo "<br/>";
+        date_default_timezone_set('Europe/Madrid');
+        echo date("Y-m-d h:i:s ");
         echo "</p>";
        
+        echo "<p>";
+        echo "6º Muestra la fecha y hora actual en Oporto formateada en (día de la semana, día de
+        mes de año, hh:mm:ss , Zona horaria). ";
+        echo "<br/>";
+        date_default_timezone_set('Europe/Lisbon');
+        echo date("Y-m-d h:i:s ");
+        echo "</p>";
     
     ?>
 </body>

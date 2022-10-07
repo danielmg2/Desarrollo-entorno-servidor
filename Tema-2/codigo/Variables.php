@@ -56,11 +56,11 @@
     echo time();
     echo "<br/>";
     echo date_default_timezone_get();
-    date_default_timezone_set('Europe/Madrid');
+    date_default_timezone_set('Europe/Lisbon');
     echo date_default_timezone_get();
 
     echo "<p>Fecha de hoy</p>";
-    echo date("d m Y h:i:s O", 123456789);
+    echo date("d m Y h:i:s ");
     echo strtotime("now");
     echo "<br>";
     echo strtotime("2022-10-04");
