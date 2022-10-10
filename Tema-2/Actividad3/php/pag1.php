@@ -39,8 +39,20 @@
         mes de año, hh:mm:ss , Zona horaria). ";
         echo "<br/>";
         date_default_timezone_set('Europe/Lisbon');
-        echo date("Y-m-d h:i:s ");
+        echo date("Y-m-d h:i:s "). date_default_timezone_get();
         echo "</p>";
+
+        echo "<p>";
+        echo "Inicializa y muestra una variable en timestamp y en fecha con formato dd/mm/yyyy 
+        de tu cumpleaños";
+        echo "<br/>";
+        $fecha1 = strtotime("2001-09-29");
+        $fecha2 = date("29-09-2001");
+        echo "timestamp:".$fecha1;
+        echo "<br/>";
+        echo "Fecha:".$fecha2;
+        echo "</p>";
+        
     
     ?>
 </body>
