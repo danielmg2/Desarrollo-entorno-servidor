@@ -43,7 +43,7 @@
         echo "</p>";
 
         echo "<p>";
-        echo "Inicializa y muestra una variable en timestamp y en fecha con formato dd/mm/yyyy 
+        echo "7º Inicializa y muestra una variable en timestamp y en fecha con formato dd/mm/yyyy 
         de tu cumpleaños";
         echo "<br/>";
         $fecha1 = strtotime("2001-09-29");
@@ -52,8 +52,22 @@
         echo "<br/>";
         echo "Fecha:".$fecha2;
         echo "</p>";
+
+
+        echo "<p>";
+        echo "8º Calcular la fecha y el día de la semana de dentro de 60 días";
+        echo "<br/>";
+        echo "Fecha actual:";
+        $fecha=date("d-m-Y");
+        echo $fecha;
+        echo "<br/>";
+        echo "Fecha dentro de 60 días:";
+        $fecha_futura = strtotime('+60 day', strtotime($fecha));
+        $fecha_futura=date("d-m-Y", $fecha_futura);
+        echo $fecha_futura;
         
-    
+        echo "</p>";
+
     ?>
 </body>
 </html>
