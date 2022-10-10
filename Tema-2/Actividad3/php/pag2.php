@@ -12,12 +12,19 @@
     echo "El valor de la variable es:";
     var_dump($variable);
     echo "<br/>";
-    echo "La variable es de tipo y uso ".gettype($variable);
+    echo "La variable es de tipo ".gettype($variable);
     if(is_numeric($variable))
     {
         echo "<br/>";
         echo "Es numérico";
         echo "<br/>";
+        if(is_int($variable))
+        {
+            echo "Es Entero";
+        }else if(is_flaot($variable))
+        {
+            echo "Es Float";
+        }
         
     } 
     ?>
