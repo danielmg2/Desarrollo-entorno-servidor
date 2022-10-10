@@ -67,7 +67,7 @@
         echo $fecha_futura;
         
         echo "</p>";
-
     ?>
+    <a href="verPag1.php">Ver codigo de la página</a>
 </body>
 </html>

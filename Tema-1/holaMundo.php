@@ -42,14 +42,15 @@
             var_dump($esnula);
         ?>
     <h1>GET</h1>
-        <?
+        <?php
             var_dump($_GET);
         ?>
     <h1>Tipo de dato</h1>
-        <?
+    <h1>awdadw</h1>
+        <?php
             echo "La variable mivariable es de tipo y uso ".gettype($mivariable);
             echo "La variable de la irl hijos es ". $_GET["hijos"];
-            echo "<br>";
+            // echo "<br>";
             echo is_numeric($_GET["hijos"]);
         ?>
     <h2>variable de variable</h2>
