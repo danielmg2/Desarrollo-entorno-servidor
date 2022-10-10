@@ -8,12 +8,12 @@
 </head>
 <body>
     <?php
-        $d = new DateTime($_GET['fecha']);
+       
+        $d=$_GET['fecha'];
+        $fecha=new DateTime($d);
         echo $d;
-        
-    
-    
-    
+        echo $fecha;
     ?>
+     <a href="verPag3.php">Ver codigo de la página</a>
 </body>
 </html>
