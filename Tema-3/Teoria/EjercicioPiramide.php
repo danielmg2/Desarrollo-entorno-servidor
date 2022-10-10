@@ -1,8 +1,5 @@
 <h2>Piramide de asteriscos</h2>
-
 <?
-
-
 $filas=5;
 $asterisco=1;
 $espacio=$filas*2;
