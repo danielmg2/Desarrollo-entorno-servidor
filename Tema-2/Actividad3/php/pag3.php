@@ -9,11 +9,12 @@
 <body>
     <?php
        
-        $d=$_GET['fecha'];
-        $fecha=new DateTime($d);
+        //$d=$_GET['fecha'];
+        $fecha=new DateTime($_GET['fecha'], time("d,m,y"));
         echo $d;
-        echo $fecha;
+        //echo $fecha;
     ?>
+    <br/>
      <a href="verPag3.php">Ver codigo de la página</a>
 </body>
 </html>

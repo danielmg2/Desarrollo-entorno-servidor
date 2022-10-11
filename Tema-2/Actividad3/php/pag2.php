@@ -18,16 +18,17 @@
         echo "<br/>";
         echo "Es numérico";
         echo "<br/>";
-        if(is_int($variable))
-        {
-            echo "Es Entero";
-        }else if(is_flaot($variable))
-        {
-            echo "Es Float";
-        }
+        // if(is_int($variable))
+        // {
+        //     echo "Es Entero";
+        // }else if(is_flaot($variable))
+        // {
+        //     echo "Es Float";
+        // }
         
     } 
     ?>
+    </br>
     <a href="verPag2.php">Ver codigo de la página</a>
 </body>
 </html>
