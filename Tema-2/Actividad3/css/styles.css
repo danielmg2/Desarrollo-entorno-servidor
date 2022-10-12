@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /*Estilo del body*/
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  /* Estilo cabecera*/
+  header {
+    background-color: rgb(99, 139, 144);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Estilo de section 
+  section {
+    margin: 5px;
+    display: -webkit-flex;
+    display: flex;
+   } */
+  
+  /* Estilo menu de navegación
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: rgb(10, 186, 240);
+    padding: 20px;
+  } */
+  
+  /* Estilo lista desordenada
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  Estilo Article
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  } */
+  
+  /* Estilo pie de pagina */
+  footer {
+    background-color: rgb(99, 139, 144);
+    padding: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  /*Estilo puntos listados*/
+  li {
+    padding: 8px;
+    text-align: left;
+  
+  }
+  
+  
+  
+  /*Estilo para videos */
+  /* @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  } */
