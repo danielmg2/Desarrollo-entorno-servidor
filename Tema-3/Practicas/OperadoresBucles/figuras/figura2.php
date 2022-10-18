@@ -31,7 +31,7 @@
             
             $asterisco-=2;
             $espacio+=2;
-            echo $asterisco;
+            
         
             for($i=0; $i<$filas;$i++)
         {
@@ -45,7 +45,7 @@
             for($g=0;$g<$asterisco;$g++)
             {
                 echo("*");
-               echo $g;
+               
             }
             echo "<br>";
         }

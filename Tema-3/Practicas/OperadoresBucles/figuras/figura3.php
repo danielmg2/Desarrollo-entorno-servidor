@@ -38,34 +38,34 @@
             echo "<br>";
         }
             
-            $asterisco-=4;
-            $espacio+=4;
+            $asterisco-=5;
+            $espacio+=5;
             
         
             for($i=0; $i<$filas;$i++)
-        {
-            $asterisco-=2;
-            $espacio+=2;
-            for($f=0;$f<=$espacio;$f++)
             {
-                echo("&nbsp;");
-            }
-            //Asteriscos izquierda
-            for($g=0;$g<$asterisco;$g++)
-            {
-                if(($g==0)||($g==$asterisco-1))
+                $asterisco-=2;
+                $espacio+=2;
+                for($f=0;$f<=$espacio;$f++)
                 {
-                    
-                    echo("*");
-                    //echo $g;
-                    
-                }else{
-                    echo("&nbsp;&nbsp;");
+                    echo("&nbsp;");
                 }
-                
+                //Asteriscos izquierda
+                for($g=0;$g<$asterisco;$g++)
+                {
+                    if(($g==0)||($g==$asterisco-1))
+                    {
+                        
+                        echo("*");
+                        //echo $g;
+                        
+                    }else{
+                        echo("&nbsp;&nbsp;");
+                    }
+                    
+                }
+                echo "<br>";
             }
-            echo "<br>";
-        }
 
     
     ?>
