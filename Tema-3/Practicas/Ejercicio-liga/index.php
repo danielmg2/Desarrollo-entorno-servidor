@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Ejercicio tablas de la liga</h1>
-    <table>
+    <table  >
     <?php
         $liga =
         array(
@@ -57,9 +57,7 @@
                 )
             ),
         );
-    ?>
-    
-    
+    ?> 
         <?php
 
             //Muestro la primera fila
@@ -77,7 +75,7 @@
                 }
             echo("</tr>");
             echo("<br>");
-                $filas=1;
+                $filas=0;
                 $cont=0;
                 //Recorro filas
                 foreach ($liga as $nombre => $valor) {
@@ -88,28 +86,33 @@
                     echo("</td>");
                     //Recorro valores
                     foreach($valor as $puntos =>$nombre){
-                        echo("<td>");
-                        if($filas!=$cont){
-                            echo("&nbsp;&nbsp;&nbsp;&nbsp;");
-                            $cont++;
+                        if($filas==$cont){
+                            echo("<td></td>");       
                         }
+                        echo("<td>");
+
+                        $cont++;
                             //Puntos de cada equipo
                             foreach ($nombre as $clave => $valor) {
                                 # code...
-                                echo($valor);
-                            }
-                            
+                                
+                                if($clave=="Resultado"){
+                                    echo "<p>";
+                                    echo($valor);
+                                    echo "</p>";
+                                }
+                                else{                          
+                                    echo($valor);                         
+                                }                     
+                            }                           
                         echo("</td>");
                     }
-
                     echo("<br>");
                     echo("</tr>");
+                    $cont=0;
                     $filas++;
                 }
         ?>  
-
-    </table>
-    
-    
+    </table> 
 </body>
 </html>
