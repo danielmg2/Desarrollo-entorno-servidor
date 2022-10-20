@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Ejercicio tablas de la liga</h1>
-    <table  >
+    <table border = "1px">
     <?php
         $liga =
         array(
@@ -114,5 +114,43 @@
                 }
         ?>  
     </table> 
+    
+    <br>
+    <br>
+    
+    <?php
+        $ciudades=array();
+            //Creación de array de ciudades
+            foreach ($liga as $key => $value) {
+                # code...
+                array_push($ciudades,$key);
+                //echo($key);
+                foreach($value as $puntos =>$nombre){
+                    //puntos
+                    foreach ($nombre as $clave => $valor) {
+                        echo($valor);
+                        if($clave=="Resultado"){                        
+                        }
+                    }
+                }
+            }                 
+            //Primera fila
+            foreach ($ciudades as $ciudad => $valor) {
+                # code...
+                echo($valor);
+                    
+            }
+        ?>
+    <table>
+        <tr>
+            <td>EQUIPO</td>
+            <td>PUNTOS</td>
+            <td>GOLES A FAVOR</td>
+            <td>GOLES EN CONTRA</td>
+        </tr>
+        <!-- <tr>
+            
+        </tr>            -->
+    </table>
 </body>
 </html>
