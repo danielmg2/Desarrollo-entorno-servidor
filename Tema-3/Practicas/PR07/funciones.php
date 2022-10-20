@@ -16,7 +16,7 @@
 
     //Función que devuelve el fichero actual
     function sel(){
-        return __FILE__;
+        echo "<br>".__FILE__;
     }
 
 ?>

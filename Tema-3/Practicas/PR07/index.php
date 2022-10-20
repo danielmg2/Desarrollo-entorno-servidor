@@ -28,5 +28,10 @@
     
     sel();
     ?>
+
+    Funcion letraDNI(), se le pasa un dni y devuelve la letra correspondiente 
+    <?php
+        
+    ?>
 </body>
 </html>
