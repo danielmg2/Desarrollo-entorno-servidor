@@ -19,4 +19,13 @@
         echo "<br>".__FILE__;
     }
 
+
+
+    //Función que pide un dni y devuelve la letra
+    function letraDni($dni){
+        $letras = array("","");
+        //Numero del dni /23 sin decimales, el resto de la division es el índice de la letra
+
+    }
+
 ?>
