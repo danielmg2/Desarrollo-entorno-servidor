@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /*Estilo del body*/
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  /* Estilo cabecera */
+  header {
+    background-color: rgb(99, 139, 144);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  span {
+    color: red;
+  }
+  div{
+    margin-left: 70px;
+    
+  }
+  #indice{
+    margin-left: 40%;
+    margin-top: 5%;
+  }
+  #insertado{
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+  #modificado{
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+
+#error{
+    margin-left: 16%;
+    margin-bottom: 30%;
+}
+
+  #formInsertar{
+    margin-left: 56%;
+    margin-bottom: 15%;
+  }
+  
+  /* Estilo pie de pagina */
+  footer {
+    background-color: rgb(99, 139, 144);
+    padding: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+
+  table{
+    margin-left: 25%;
+    margin-top: 5%;
+    border-collapse: collapse;
+    border: 3px solid black;
+  }
+  td{
+    border: 3px solid black;
+  }
+  
+  
+ 

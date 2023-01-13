@@ -36,21 +36,33 @@
         </p>
         <p><b>Genero</b>
             <label for="">Masculino</label>
-            <input type="radio" name="genero" id="idMasculino" value="Masculino">
+            <input type="radio" name="genero" id="idMasculino" value="Masculino"
+            
             <?php
-                if(enviado() && existe("genero") && $_REQUEST["genero"] == "masculino"){
+                if(enviado() && existe("genero") && $_REQUEST["genero"] == "Masculino"){
                     echo "checked";
                 }
             ?>
+            >
+            
             <label for="">Femenino</label>
-            <input type="radio" name="genero" id="idFemenino" value="Femenino">
-            <?
-                if(!existe("genero")&& enviado()){
-                    ?>
-                    <span>Debe elegir un número</span>
-                    <?
+            <input type="radio" name="genero" id="idFemenino" value="Femenino"
+            <?php
+                if(enviado() && existe("genero") && $_REQUEST["genero"] == "Femenino"){
+                    echo "checked";
                 }
             ?>
+            >
+            <?php
+                if(enviado() && !existe("genero")){
+                    ?>
+                        <span>No existe genero</span>
+                    <?php
+                    
+                }
+            ?>
+            
+
         </p>
         <p><b>Asignaturas:</b>
             <label for="IdDWES">Desarrollo Web Entorno Servidor</label>
@@ -72,7 +84,7 @@
         <!-- <input type="file" name = "fichero" id="idFichero"> -->
         <br>
         
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" name = "enviado">
     </form>
 </body>
 </html>
