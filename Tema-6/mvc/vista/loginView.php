@@ -1,27 +1,13 @@
-<div class="col-4">
 <?
-    if(isset($_SESSION['error'])){
-        echo $_SESSION['error'];
-    }
+if (isset($_SESSION['error'])) {
+    echo $_SESSION['error'];
+    unset($_SESSION['error']);
+}
 ?>
-    <form action="">
-        <div class="mb-3 row">
-            <label for="user" class="col-2 col-form-label">Usuario</label>
-            <div class="col-8">
-                <input type="text" class="form-control" name="user" id="inputName" placeholder="Usuario">
-            </div>
-        </div>
-        <div class="mb-3 row">
-            <label for="pass" class="col-2 col-form-label">Contraseña</label>
-            <div class="col-8">
-                <input type="password" class="form-control" name="pass" id="inputName" placeholder="Contraseña">
-            </div>
-        </div>
-        
-        <div class="mb-3 row">
-            <div class="offset-sm-4 col-sm-8">
-                <button type="submit" class="btn btn-warning" name="enviar">Inciar Sesión</button>
-            </div>
-        </div>
-    </form>
-</div>
+<form action="./index.php" method="post">
+    <label for="user">Usuario</label>
+    <input type="text" name="user" id="user">
+    <label for="pass">Contraseña</label>
+    <input type="password" name="pass" id="pass">
+    <input type="submit" value="Enviar" name="enviar">
+</form>
