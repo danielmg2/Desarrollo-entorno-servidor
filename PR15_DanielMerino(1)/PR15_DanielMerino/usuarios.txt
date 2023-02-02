@@ -1,0 +1,9 @@
+Administrador:
+	nombre de usuario:admin
+	contraseña:admin
+moderador:
+	nombre de usuario:mod
+	contraseña:mod
+Usuario:
+	nombre de usuario:daniel
+	contraseña:daniel
