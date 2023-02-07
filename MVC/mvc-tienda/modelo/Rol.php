@@ -1,19 +1,13 @@
 <?
 
-class Usuario{
+class Rol{ 
+    private $rol;
     private $usuario;
-    private $contraseña;
-    private $email;
-    private $fecha;
-    
 
-    public function __construct($usuario,$contraseña,$email,$fecha)
+    public function __construct($rol,$usuario)
     {
         $this->usuario = $usuario;
-        $this->contraseña = $contraseña;
-        $this->email = $email;
-        $this->fecha = $fecha;
-        
+        $this->rol = $rol;
     }
     
     public function __get($get){

@@ -20,7 +20,7 @@ class ProductoDAO extends FactoryBD implements DAO{
         $devuelve = parent::ejecuta($sql,$datos);
         $obj = $devuelve->fetchObject();
         if($obj){
-            $producto = new Producto($obj->codProd, $obj->nombre, $obj->descripcion,$obj->precio, $obj->stock,$obj->imagen);
+            $producto = new Producto($obj->id, $obj->nombre, $obj->descripcion,$obj->precio, $obj->stock,$obj->imagen);
             return $producto;
         }  
         return null;
@@ -51,7 +51,7 @@ class ProductoDAO extends FactoryBD implements DAO{
     }
     public static function update($objeto){
         $sql = 'update productos set nombre = ?,descripcion = ?,precio = ?,stock=?,img=? where id = ? ';
-        $datos = array($objeto->nombre,$objeto->descripcion,$objeto->precio,$objeto->stock,$objeto->img,$objeto->codProd);
+        $datos = array($objeto->nombre,$objeto->descripcion,$objeto->precio,$objeto->stock,$objeto->img,$objeto->id);
         $devuelve = parent::ejecuta($sql,$datos); 
         if($devuelve->rowCount() == 0){
             return false;

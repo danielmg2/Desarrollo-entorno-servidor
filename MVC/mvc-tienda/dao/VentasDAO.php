@@ -1,20 +1,20 @@
 <?
 
-class UsuarioDAO extends FactoryBD implements DAO{
+class VentasDAO extends FactoryBD implements DAO{
     public static function findAll(){
-        $sql = 'select * from usuarios;';
+        $sql = 'select * from ventas;';
         $datos = array();
         $devuelve = parent::ejecuta($sql,$datos);
         $arrayUsuarios = array();
         while($obj = $devuelve->fetchObject()){         
-            $usuario = new Usuario($obj->usuario, $obj->contrasena, $obj->email,$obj->fecha);
-            array_push($arrayUsuarios,$usuario);
+            $venta = new Ventas($obj->id, $obj->usuario, $obj->fecha,$obj->cod_producto,$obj->cantidad,$obj->precio_total);
+            array_push($arrayUsuarios,$venta);
         }
         return $arrayUsuarios;
 
     }
     public static function findById($id){
-        $sql = 'select * from usuarios where usuario = ?;';
+        $sql = 'select * from ventas where id = ?;';
         $datos = array($id);
         $devuelve = parent::ejecuta($sql,$datos);
         $obj = $devuelve->fetchObject();

@@ -10,7 +10,7 @@ class Producto{
 
     public function __construct($id,$nombre,$descripcion,$precio,$stock,$imagen)
     {
-        $this->codProd = $id;
+        $this->id = $id;
         $this->nombre = $nombre;
         $this->descripcion = $descripcion;        
         $this->precio = $precio;

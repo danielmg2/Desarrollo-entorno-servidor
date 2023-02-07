@@ -12,7 +12,7 @@
                             <h5 class="card-title"><? echo $producto->nombre ?></h5>
                             <p class="card-text"><? echo substr($producto->descripcion, 0, 20); ?>...</p>
                             <form>
-                                <input type='hidden' name='codProd' value='<? echo $producto->codProd ?>'>
+                                <input type='hidden' name='codProd' value='<? echo $producto->id ?>'>
                                 <input type='submit' href="./index.php" class="btn btn-primary" value='Ver' name='ver'>
                             </form>
                         </div>

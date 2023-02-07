@@ -1,21 +1,20 @@
 <?
 
-class Usuario{
-    private $usuario;
-    private $contraseña;
-    private $email;
+class Concierto{
+    private $id;
+    private $grupo;
     private $fecha;
-    
+    private $precio;
+    private $lugar;
 
-    public function __construct($usuario,$contraseña,$email,$fecha)
+    public function __construct($grupo,$fecha,$precio,$lugar)
     {
-        $this->usuario = $usuario;
-        $this->contraseña = $contraseña;
-        $this->email = $email;
+        $this->grupo = $grupo;
         $this->fecha = $fecha;
-        
+        $this->precio = $precio;
+        $this->lugar = $lugar;
     }
-    
+
     public function __get($get){
         if(property_exists(__CLASS__,$get))
             return $this->$get;
@@ -27,5 +26,4 @@ class Usuario{
             $this->$clave=$valor;
         
     }
-
 }

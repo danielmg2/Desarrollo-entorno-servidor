@@ -9,15 +9,16 @@ function estaValidado(){
 
 function esAdmin(){
     if(isset($_SESSION['perfil'])){
-        if($_SESSION['perfil'] == 'admin')
+        if($_SESSION['perfil'] == 'administrador')
              return true;
     }
     return false;
 }
 
+
 function esModerador(){
     if(isset($_SESSION['perfil'])){
-        if($_SESSION['perfil'] == 'mod')
+        if($_SESSION['perfil'] == 'moderador')
              return true;
     }
     return false;

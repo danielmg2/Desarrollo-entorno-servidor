@@ -1,0 +1,4 @@
+curl -V
+sudo apt-get install php-curl
+
+para conectarse poner en thunderclient la url de la maquina /conciertos

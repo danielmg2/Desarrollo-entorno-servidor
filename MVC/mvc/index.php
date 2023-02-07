@@ -29,6 +29,9 @@ if (isset($_REQUEST['home'])) {
         $_SESSION['pagina'] = 'login';
         $_SESSION['controlador'] = $controladores['login'];
         $_SESSION['vista'] = $vistas['login'];
+    
+    
+    
     } elseif (isset($_SESSION['pagina'])) {
         if(isset($_REQUEST['miperfil'])){
             $_SESSION['accion'] = 'ver';

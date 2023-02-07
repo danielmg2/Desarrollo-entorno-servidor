@@ -29,9 +29,26 @@ if (isset($_REQUEST['home'])) {
         $_SESSION['pagina']= 'login';
         $_SESSION['controlador'] = $controladores['login'];
         $_SESSION['vista'] = $vistas['login'];
-    }else{
-        require_once $_SESSION['controlador'];
+    }elseif(isset($_SESSION['pagina'])){
+
+        if(isset($_REQUEST['miperfil'])){
+            $_SESSION['accion'] = 'ver';
+            $_SESSION['controlador'] = $controladores['user'];
+            $_SESSION['vista'] = $vistas['user'];
+            require_once $_SESSION['controlador'];
+    
+        }else if(esAdmin() && isset($_REQUEST['admin'])){
+                
+                $_SESSION['controlador'] = $controladores['admin'];
+                $_SESSION['pagina'] = 'admin';
+                $_SESSION['vista'] = $vistas['admin'];
+                require_once $_SESSION['controlador'];
+        }else{
+            require_once $_SESSION['controlador'];
+        }
     }
+    
+    
     
 }
 

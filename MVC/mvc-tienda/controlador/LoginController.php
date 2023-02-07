@@ -12,12 +12,15 @@ if (isset($_REQUEST['registro'])) {
         } elseif (empty($pass)) {
             $_SESSION['error'] = "Debe rellenar la contraseña";
         } else {
+
+
             $usuario = UsuarioDAO::valida($user, $pass);
-            if ($usuario != null) {
+            $rol = RolDAO::buscaRol($user);
+            if (($usuario != null)&&($rol != null)) {
                 $_SESSION['validado'] = true;
                 $_SESSION['user'] = $user;
-                $_SESSION['nombre'] = $usuario->nombre;
-                $_SESSION['perfil'] = $usuario->perfil;
+                $_SESSION['nombre'] = $usuario->usuario;
+                $_SESSION['perfil'] = $rol->rol;
                 $_SESSION['vista'] = $vistas['home'];
                 $_SESSION['controlador'] = $controladores['home'];
                 $_SESSION['pagina'] = 'home';     

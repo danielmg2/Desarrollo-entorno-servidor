@@ -1,18 +1,22 @@
 <?
 
-class Usuario{
+class Ventas{
+    private $id;
     private $usuario;
-    private $contraseña;
-    private $email;
     private $fecha;
+    private $cod_producto;
+    private $cantidad;
+    private $precio_total;
     
 
-    public function __construct($usuario,$contraseña,$email,$fecha)
+    public function __construct($id,$usuario,$fecha,$cod_producto,$cantidad,$precio_total)
     {
+        $this->id = $id;
         $this->usuario = $usuario;
-        $this->contraseña = $contraseña;
-        $this->email = $email;
         $this->fecha = $fecha;
+        $this->cod_producto = $cod_producto;
+        $this->cantidad = $cantidad;
+        $this->precio_total = $precio_total;
         
     }
     
